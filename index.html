@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Configuratore PC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="formcon" id="FormCon">
+        <h1 class="Title white">Configuratore PC</h1>
+        <form action="ordine.html" id="hellow">
+          <div class="GridCon">
+            <label class="white" for="CPU">CPU*: </label>
+            <select name="CPU" id="CPU" class="hover" required>
+              <option value=""></option>
+              <option value="AMD Ryzen 5 5600X" price="157.86">
+                AMD Ryzen 5 5600X
+              </option>
+              <option value="AMD Ryzen 7 7800X3D" price="399">
+                AMD Ryzen 7 7800X3D
+              </option>
+              <option value="Intel Core i7-13700K" price="375.37">
+                Intel Core i7-13700K
+              </option>
+              <option value="AMD Ryzen 7 5800X" price="211.5">
+                AMD Ryzen 7 5800X
+              </option>
+              <option value="AMD Ryzen 5 7600X" price="249">
+                AMD Ryzen 5 7600X
+              </option>
+              <option value="Intel Core i9-13900K" price="551.99">
+                Intel Core i9-13900K
+              </option>
+              <option value="AMD Ryzen 5 5600" price="139.99">
+                AMD Ryzen 5 5600
+              </option>
+              <option value="Intel Core i5-12400F" price="142.99">
+                Intel Core i5-12400F
+              </option>
+              <option value="Intel Core i5-12600K" price="218.22">
+                Intel Core i5-12600K
+              </option>
+              <option value="AMD Ryzen 7 7700X" price="331">
+                AMD Ryzen 7 7700X
+              </option>
+            </select>
+            <label class="white" for="SchedaMadre">Scheda Madre*: </label>
+            <select name="SchedaMadre" id="SchedaMadre" class="hover" required>
+              <option value=""></option>
+              <option value="MSI MAG B550 TOMAHAWK" price="169.99">
+                MSI MAG B550 TOMAHAWK
+              </option>
+              <option value="Gigabyte B650 AORUS ELITE AX" price="199">
+                Gigabyte B650 AORUS ELITE AX
+              </option>
+              <option value="MSI B550-A PRO" price="129.99">
+                MSI B550-A PRO
+              </option>
+              <option value="MSI B550 GAMING GEN3" price="99.99">
+                MSI B550 GAMING GEN3
+              </option>
+              <option value="Gigabyte Z790 AORUS ELITE AX" price="239.99">
+                Gigabyte Z790 AORUS ELITE AX
+              </option>
+              <option value="MSI B550M PRO-VDH WIFI" price="119.99">
+                MSI B550M PRO-VDH WIFI
+              </option>
+              <option value="MSI MAG B650 TOMAHAWK WIFI" price="219.99">
+                MSI MAG B650 TOMAHAWK WIFI
+              </option>
+              <option value="MSI MAG Z790 TOMAHAWK WIFI" price="259.99">
+                MSI MAG Z790 TOMAHAWK WIFI
+              </option>
+              <option value="Asus Prime B450M-A II" price="79.98">
+                Asus Prime B450M-A II
+              </option>
+              <option
+                value="Asus ROG STRIX B550-F GAMING WIFI II"
+                price="169.99"
+              >
+                Asus ROG STRIX B550-F GAMING WIFI II
+              </option>
+            </select>
+            <div class="MemoriaDiv">
+              <label class="white" for="Memoria">Memoria*: </label>
+              <div class="MemoriaDiv2">
+                <select
+                  name="Memoria"
+                  id="Memoria"
+                  class="hover MemorySelect"
+                  required
+                >
+                  <option value=""></option>
+                  <option value="Corsair Vengeance LPX 16 GB" price="39.99">
+                    Corsair Vengeance LPX 16 GB
+                  </option>
+                  <option value="Corsair Vengeance 32 GB" price="94.99">
+                    Corsair Vengeance 32 GB
+                  </option>
+                  <option value="Corsair Vengeance RGB Pro 32 GB" price="94.99">
+                    Corsair Vengeance RGB Pro 32 GB
+                  </option>
+                  <option value="Corsair Vengeance LPX 32 GB" price="69.98">
+                    Corsair Vengeance LPX 32 GB
+                  </option>
+                  <option value="G.Skill Trident Z5 RGB 32 GB" price="96.99">
+                    G.Skill Trident Z5 RGB 32 GB
+                  </option>
+                  <option value="G.Skill Trident Z5 RGB 64 GB" price="209.99">
+                    G.Skill Trident Z5 RGB 64 GB
+                  </option>
+                  <option value="Corsair Vengeance RGB 32 GB" price="100.99">
+                    Corsair Vengeance RGB 32 GB
+                  </option>
+                  <option value="Corsair Vengeance RGB Pro 16 GB" price="53.99">
+                    Corsair Vengeance RGB Pro 16 GB
+                  </option>
+                  <option value="Corsair Vengeance 32 GB" price="94.99">
+                    Corsair Vengeance 32 GB
+                  </option>
+                  <option value="G.Skill Ripjaws S5 32 GB" price="96.99">
+                    G.Skill Ripjaws S5 32 GB
+                  </option>
+                </select>
+                <input
+                  type="number"
+                  min="1"
+                  max="10"
+                  required
+                  class="hover Quantity"
+                  id="Quantity"
+                  placeholder="Quantità"
+                />
+              </div>
+            </div>
+            <!--  -->
+            <label class="white" for="SchedaGrafica">SchedaGrafica*: </label>
+            <select
+              name="SchedaGrafica"
+              class="hover"
+              id="SchedaGrafica"
+              required
+            >
+              <option value=""></option>
+              <option value="MSI GeForce RTX 3060 Ventus 2X 12G" price="289.99">
+                MSI GeForce RTX 3060 Ventus 2X 12G
+              </option>
+              <option value="Gigabyte WINDFORCE OC" price="549.99">
+                Gigabyte WINDFORCE OC
+              </option>
+              <option value="MSI RTX 3060 Ventus 3X 12G OC" price="299.99">
+                MSI RTX 3060 Ventus 3X 12G OC
+              </option>
+              <option value="XFX Speedster SWFT 309" price="300">
+                XFX Speedster SWFT 309
+              </option>
+              <option value="Asus TUF GAMING OC" price="849.99">
+                Asus TUF GAMING OC
+              </option>
+              <option value="ASRock Radeon RX6700XT CLD 12G" price="329.99">
+                ASRock Radeon RX6700XT CLD 12G
+              </option>
+              <option value="XFX Speedster MERC 319" price="629.99">
+                XFX Speedster MERC 319
+              </option>
+              <option value="XFX Speedster MERC 319 CORE" price="529.99">
+                XFX Speedster MERC 319 CORE
+              </option>
+              <option value="ASRock Challenger D" price="209.99">
+                ASRock Challenger D
+              </option>
+            </select>
+          </div>
+          <div class="BottoniFormCon">
+            <div class="PriceFrom">
+              <button
+                type="button"
+                class="PriceCalcButton hover"
+                id="PriceCalcButton"
+              >
+                Calcola Prezzo
+              </button>
+              <h4 class="white" id="prezzotext" value="0"></h4>
+              <input name="prezzo" type="hidden" id="prezzo" value="0" />
+            </div>
+            <div id="SendButton"></div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

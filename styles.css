@@ -1,0 +1,238 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    #0b1d35,
+    #0a1b31,
+    #08182d,
+    #071629,
+    #061325
+  );
+  margin: 12px;
+  font-family: 'Quicksand', sans-serif;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+/*https://colorhunt.co/palette/1320431f4172f1b4bbfdf0f0*/
+
+/*
+can you make me a html select tag putting name: as the text in between option and price: as the value?*/
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.formcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 20px 0 20px 0;
+  background-color: #112a49;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .formcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 20px 0 20px 0;
+    background-color: #112a49;
+    border-radius: 20px;
+  }
+}
+
+form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.GridCon {
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.GridCon label {
+  margin: 7.5px 0 7.5px 0;
+}
+
+.GridCon2 {
+  display: flex;
+  width: 70%;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.GridCon2 label {
+  margin: 7.5px 0 7.5px 0;
+}
+
+form select {
+  width: 80%;
+  margin: 3px;
+  background-image: linear-gradient(
+    to right,
+    #f1b4bb,
+    #f4bbc1,
+    #f7c1c7,
+    #f9c8ce,
+    #fccfd4
+  );
+  padding: 5px;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  border: solid 3px white;
+  text-align: center;
+}
+
+form .Quantity {
+  width: 35%;
+  margin: 3px;
+  background-image: linear-gradient(
+    to right,
+    #f1b4bb,
+    #f4bbc1,
+    #f7c1c7,
+    #f9c8ce,
+    #fccfd4
+  );
+  padding: 5px;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  border: solid 3px white;
+  text-align: center;
+}
+
+form .TextInput {
+  width: 75%;
+  margin: 3px;
+  background-image: linear-gradient(
+    to right,
+    #f1b4bb,
+    #f4bbc1,
+    #f7c1c7,
+    #f9c8ce,
+    #fccfd4
+  );
+  padding: 5px;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  border: solid 3px white;
+  text-align: center;
+}
+
+form option {
+  width: 80%;
+  margin: 3px;
+  background-color: #f1b4bb;
+  padding: 5px;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  border: solid 3px white;
+  text-align: start;
+}
+
+.MemorySelect {
+  width: 40%;
+  margin: 3px;
+  background-color: #f1b4bb;
+  padding: 5px;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  border: solid 3px white;
+  text-align: start;
+}
+
+.MemoriaDiv {
+  display: flex;
+  margin: 3px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MemoriaDiv2 {
+  display: flex;
+  justify-content: center;
+}
+
+.Title {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.BottoniFormCon {
+  margin: 25px 0 0 0;
+  text-align: center;
+}
+
+.PriceCalcButton {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f4bbc1;
+  border: solid 3px white;
+}
+
+.PayButton {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f4bbc1;
+  border: solid 3px white;
+}
+
+.white {
+  color: #fcfcfc;
+}
+
+.pink {
+  color: #f1b4bb;
+}
+
+.hover:hover {
+  opacity: 70%;
+}
+
+* {
+  transition: all 0.3s ease-in;
+}
+
+.NoBorder {
+  border: none;
+}
+
+.WhiteBorder {
+  border: solid 5px #ffffff;
+}
+
+.GreenBorder {
+  border: solid 5px #32a852;
+}
+
+.YellowBorder {
+  border: solid 5px #f2d968;
+}
+
+.RedBorder {
+  border: solid 5px #db4653;
+}

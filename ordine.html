@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Conferma ordine</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="script2.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="formcon" id="FormCon">
+        <h2 class="Title white">Conferma Ordine</h2>
+        <form action="fine.html" id="hellow">
+          <div class="GridCon2">
+            <label class="white" for="Cognome">Cognome: </label>
+            <input
+              type="text"
+              name="Cognome"
+              id="Cognome"
+              class="hover TextInput"
+              required
+            />
+            <label class="white" for="Nome">Nome*: </label>
+            <input
+              type="text"
+              name="Nome"
+              id="Nome"
+              class="hover TextInput"
+              required
+            />
+            +
+            <label class="white" for="Mail">E-Mail*: </label>
+            <input
+              type="email"
+              name="Mail"
+              id="Mail"
+              class="hover TextInput"
+              required
+            />
+            <label class="white" for="Provincia">Provincia*: </label>
+            <select name="Provincia" class="hover" id="Provincia" required>
+              <option value=""></option>
+              <option value="Milano" price="0.00">Milano</option>
+              <option value="Vicenza" price="5.00">Vicenza</option>
+              <option value="Roma" price="10.00">Roma</option>
+              <option value="Palermo" price="15.00">Palermo</option>
+            </select>
+          </div>
+          <div class="BottoniFormCon">
+            <div class="PriceFrom">
+              <button
+                type="button"
+                class="PriceCalcButton hover"
+                id="PriceCalcButton"
+              >
+                Calcola Prezzo
+              </button>
+              <h4 class="white" id="testoprezzo"></h4>
+              <input name="totale" type="hidden" id="totale" value="0" />
+            </div>
+            <div id="SendButton"></div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
